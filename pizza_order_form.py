@@ -53,7 +53,7 @@ def order():
     #     extras = ", ".join(request.form.getlist('extras'))
     #     instructions = request.form['instructions'].strip()
     #
-    # Validate name length (must be between 3 and 20 characters)
+    # #Validate name length (must be between 3 and 20 characters)
     # if len(name) < 3 or len(name) > 20:
     #     abort(404)
     #

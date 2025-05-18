@@ -1,53 +1,92 @@
 {% extends 'layout.html' %}
 {% block content %}
-
     <body>
-{#    <form name="pizzaForm" method="POST">#}
-{#        <table>#}
-{#            <tr>#}
-{#                <td colspan="2">Pizza shop 2.0</td>#}
-{#            </tr>#}
-{#            <tr>#}
-{#                <td>Name</td>#}
-{#                <td><input name="name" type="text" required minlength="3" maxlength="20"></td>#}
-{#            </tr>#}
-{#            <tr>#}
-{#                <td>Pizza Topping</td>#}
-{#                <td>#}
-{#                    <input type="radio" name="topping" required value="apple">apple<br>#}
-{#                    <input type="radio" name="topping" value="banana">banana<br>#}
-{#                    <input type="radio" name="topping" value="pear">pear<br>#}
-{#                </td>#}
-{#            </tr>#}
-{#            <tr>#}
-{#                <td>Pizza Sauce</td>#}
-{#                <td>#}
-{#                    <select name="sauce" required>#}
-{#                        <option>Tomato</option>#}
-{#                        <option>BBQ</option>#}
-{#                        <option>Garlic</option>#}
-{#                    </select>#}
-{#                </td>#}
-{#            </tr>#}
-{#            <tr>#}
-{#                <td>Optional Extras</td>#}
-{#                <td>#}
-{#                    <input type="checkbox" name="extras" value="GF">GF<br>#}
-{#                    <input type="checkbox" name="extras" value="Extra Cheese">Extra Cheese<br>#}
-{#                </td>#}
-{#            </tr>#}
-{#            <tr>#}
-{#                <td>Instructions</td>#}
-{#                <td>#}
-{#                    <textarea name="instructions"></textarea>#}
-{#                </td>#}
-{#            </tr>#}
-{#            <tr>#}
-{#                <td><input type="submit" value="Submit my order"></td>#}
-{#            </tr>#}
-{#        </table>#}
-{#    </form>#}
+    <!--<link rel="stylesheet" href="https://www.minecraft.net/webui/mc-components.min.css" type="text/css">-->
+    {#    <form name="pizzaForm" method="POST">#}
+    {#        <table>#}
+    {#            <tr>#}
+    {#                <td colspan="2">Pizza shop 2.0</td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td>Name</td>#}
+    {#                <td><input name="name" type="text" required minlength="3" maxlength="20"></td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td>Pizza Topping</td>#}
+    {#                <td>#}
+    {#                    <input type="radio" name="topping" required value="apple">apple<br>#}
+    {#                    <input type="radio" name="topping" value="banana">banana<br>#}
+    {#                    <input type="radio" name="topping" value="pear">pear<br>#}
+    {#                </td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td>Pizza Sauce</td>#}
+    {#                <td>#}
+    {#                    <select name="sauce" required>#}
+    {#                        <option>Tomato</option>#}
+    {#                        <option>BBQ</option>#}
+    {#                        <option>Garlic</option>#}
+    {#                    </select>#}
+    {#                </td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td>Optional Extras</td>#}
+    {#                <td>#}
+    {#                    <input type="checkbox" name="extras" value="GF">GF<br>#}
+    {#                    <input type="checkbox" name="extras" value="Extra Cheese">Extra Cheese<br>#}
+    {#                </td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td>Instructions</td>#}
+    {#                <td>#}
+    {#                    <textarea name="instructions"></textarea>#}
+    {#                </td>#}
+    {#            </tr>#}
+    {#            <tr>#}
+    {#                <td><input type="submit" value="Submit my order"></td>#}
+    {#            </tr>#}
+    {#        </table>#}
+    {#    </form>#}
 
+    <form>
+
+        Name<input type="text" maxlength="20" required><br>
+
+        topping<input type="radio" required>aaaa<br>
+        <input type="radio">bbb<br>
+        <input type="radio">bbb<br>
+
+        sauce<select required>
+        <option>Tomato</option>
+        <option>garlic</option>
+        <option>vvv</option>
+    </select><br>
+
+        extra<input type="checkbox">aaaa<br>
+        <input type="checkbox">bbb<br>
+
+        instructions<textarea></textarea><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!--
+    <form class="MC_SearchBoxB_form" action="/search" role="search">
+        <label class="MC_SearchBoxB_label" for="MC_SearchBoxB_GlobalNav_primary-nav-1c9a749a7c_input">Search</label>
+
+        <div class="MC_SearchBoxB_form-container">
+            <input class="MC_SearchBoxB_input" autocomplete="off" autocorrect="false" spellcheck="false" name="q"
+                   type="search" id="MC_SearchBoxB_GlobalNav_primary-nav-1c9a749a7c_input"
+                   placeholder="Search Minecraft.net" maxlength="200" role="combobox" aria-autocomplete="both"
+                   aria-expanded="false" aria-controls="MC_SearchBoxB_GlobalNav_primary-nav-1c9a749a7c_suggestions">
+            <button class="MC_SearchBoxB_clear-button" type="button" title="Close search" aria-label="Close search"
+                    data-aem-contentname="globalnav-searchclear" aria-hidden="true"
+                    data-bi-id="n1c1c1c1c1c1c1c1c1c1c1m5r3a1" data-bi-ct="button" data-bi-cn="globalnav-searchclear"
+                    data-bi-ecn="globalnav-searchclear"></button>
+        </div>
+    </form>
+    -->
     </body>
 
 {% endblock %}
