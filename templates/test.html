@@ -48,24 +48,24 @@
     {#        </table>#}
     {#    </form>#}
 
-    <form>
+    <form method="POST">
 
-        Name<input type="text" maxlength="20" required><br>
+        Name<input type="text" name="name" maxlength="20" required><br>
 
-        topping<input type="radio" required>aaaa<br>
-        <input type="radio">bbb<br>
-        <input type="radio">bbb<br>
+        topping<input type="radio" name="topping" required value="aaaa">aaaa<br>
+        <input type="radio" name="topping" value="bbb">bbb<br>
+        <input type="radio" name="topping" value="bbb">bbb<br>
 
-        sauce<select required>
+        sauce<select name="sauce" required>
         <option>Tomato</option>
         <option>garlic</option>
         <option>vvv</option>
     </select><br>
 
-        extra<input type="checkbox">aaaa<br>
-        <input type="checkbox">bbb<br>
+        extra<input name="extras" type="checkbox" value="aaaa">aaaa<br>
+        <input name="extras" type="checkbox" value="bbb">bbb<br>
 
-        instructions<textarea></textarea><br>
+        instructions<textarea name="instructions"></textarea><br>
 
         <input type="submit" value="Submit">
 
