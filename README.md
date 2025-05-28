@@ -7,6 +7,16 @@
 
 • Learning resources: https://www.w3schools.com/html/html_forms.asp
 
+
+# Personal Website by Github
+• Official guidelines:
+https://pages.github.com/
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+
+• Chinese Version:
+https://lemonchann.github.io/blog/create_blog_with_github_pages/#
+
 # Trouble shooting
 
 1.Problem:

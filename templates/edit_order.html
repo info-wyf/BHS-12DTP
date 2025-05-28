@@ -7,7 +7,7 @@
     <body>
     <h1>Edit Order</h1>
     <form action="{{ url_for('update_order', id=order.id) }}" method="post">
-        <label for="name">Name:</label>
+        Name:
         <input type="text" id="name" name="name" value="{{ order.name }}" required><br>
         <label>Pizza Topping:</label>
         <input type="radio" id="supreme" name="topping" value="Supreme"
@@ -34,7 +34,7 @@
         <label for="gluten_free">Gluten Free Base</label><br>
         <label for="instructions">Delivery Instructions:</label>
         <textarea id="instructions" name="instructions" rows="4" cols="40">{{ order.instructions }}</textarea><br>
-        <input type="submit" value="Update Order">
+        <input type="submit" value="change">
     </form>
     </body>
 {% endblock %}

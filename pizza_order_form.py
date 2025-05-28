@@ -7,27 +7,52 @@ app = Flask(__name__)
 app.config['DATABASE'] = os.path.join(app.root_path, 'pizza.db')
 
 
+# Function to get the database connection
+# Creates the database and tables if they don't exist
 def get_db():
-    if 'db' not in g:
-        g.db = sqlite3.connect(app.config['DATABASE'])
-        g.db.execute('PRAGMA foreign_keys = ON')
-        g.db.execute("""
-            CREATE TABLE IF NOT EXISTS Orders (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                name TEXT NOT NULL,
-                topping TEXT NOT NULL,
-                sauce TEXT NOT NULL,
-                extras TEXT,
-                instructions TEXT
-            )
-        """)
-        g.db.commit()
-    return g.db
+    # Use Flask's application context to store the database connection
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = sqlite3.connect('pizza.db')
+        db.row_factory = sqlite3.Row  # Enable dictionary-like access to rows
+        # Create tables if they don't exist
+        c = db.cursor()
+        # Pizza table for storing pizza details
+        c.execute('''CREATE TABLE IF NOT EXISTS Pizza (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT
+                    )''')
+        # Topping table for storing topping details
+        c.execute('''CREATE TABLE IF NOT EXISTS Topping (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT
+                    )''')
+        # PizzaTopping table for linking pizzas with toppings
+        c.execute('''CREATE TABLE IF NOT EXISTS PizzaTopping (
+                        pizza_id INTEGER,
+                        topping_id INTEGER,
+                        FOREIGN KEY(pizza_id) REFERENCES Pizza(id),
+                        FOREIGN KEY(topping_id) REFERENCES Topping(id),
+                        PRIMARY KEY (pizza_id, topping_id)
+                    )''')
+        # Orders table for storing pizza orders
+        c.execute('''CREATE TABLE IF NOT EXISTS Orders (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        name TEXT UNIQUE,
+                        topping TEXT,
+                        sauce TEXT,
+                        extras TEXT,
+                        instructions TEXT,
+                        update_time TEXT
+                    )''')
+        db.commit()
+    return db
 
 
+# Close the database connection after each request
 @app.teardown_appcontext
-def close_db(error):
-    db = g.pop('db', None)
+def close_db(exception):
+    db = getattr(g, '_database', None)
     if db is not None:
         db.close()
 
@@ -103,6 +128,31 @@ def order():
         return render_template('confirmation.html', name=name)
     return render_template('test.html')
 
+@app.route('/delete_order/<int:id>',methods = ['POST'])
+def delete_order(id):
+    db = get_db()
+    db.execute("DELETE FROM Orders WHERE id =?",(id,))
+    cursor = db.execute("SELECT * FROM Orders ORDER BY id ASC")
+    orderlists = cursor.fetchall()
+    db.commit()
+    db.close()
+
+    return render_template("test_list.html", orders=orderlists)
+
+# Route to Orders list with search
+@app.route('/orderList')
+def order_List():
+    db = get_db()
+    cursor = db.execute("SELECT * FROM Orders ORDER BY id ASC")
+    orderlists = cursor.fetchall()
+    db.close()
+    print(orderlists)
+    # for orderlist in orderlists:
+    #     print(orderlist)
+    #     print(orderlist[0])
+    #     print(orderlist[1])
+    #     print(orderlist[2])
+    return render_template('test_list.html', orders=orderlists)
 
 @app.errorhandler(404)
 def not_found(e):
