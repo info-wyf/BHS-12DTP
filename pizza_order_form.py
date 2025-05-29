@@ -14,7 +14,7 @@ def get_db():
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect('pizza.db')
-        db.row_factory = sqlite3.Row  # Enable dictionary-like access to rows
+        # db.row_factory = sqlite3.Row  # Enable dictionary-like access to rows
         # Create tables if they don't exist
         c = db.cursor()
         # Pizza table for storing pizza details

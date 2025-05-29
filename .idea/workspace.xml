@@ -5,9 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizza.db" beforeDir="false" afterPath="$PROJECT_DIR$/pizza.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizza_order_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/pizza_order_form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/edit_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/test_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_list.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BHS_12DTP$pizza_order_form.coverage" NAME="pizza_order_form Coverage Results" MODIFIED="1748392990532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BHS_12DTP$pizza_order_form.coverage" NAME="pizza_order_form Coverage Results" MODIFIED="1748476526432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BHS_12DTP$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1746874279384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/BHS_12DTP$main.coverage" NAME="main Coverage Results" MODIFIED="1748396460447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BHS_12DTP$BHS_12DTP.coverage" NAME="BHS-12DTP Coverage Results" MODIFIED="1746871639419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -43,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="173" column="53" lean-forward="true" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
+            <state relative-caret-position="150">
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -81,8 +80,8 @@
       <file leaf-file-name="pizza_order_form.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pizza_order_form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+            <state relative-caret-position="424">
+              <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="79" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -90,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_list.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_list.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/test_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="454">
+              <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -147,10 +146,10 @@
         <option value="$PROJECT_DIR$/templates/order_form.html" />
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/templates/orders_list.html" />
-        <option value="$PROJECT_DIR$/templates/test_list.html" />
-        <option value="$PROJECT_DIR$/pizza_order_form.py" />
         <option value="$PROJECT_DIR$/templates/edit_order.html" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/pizza_order_form.py" />
+        <option value="$PROJECT_DIR$/templates/test_list.html" />
       </list>
     </option>
   </component>
@@ -225,7 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.pizza_order_form">
     <configuration name="test.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/BHS-12DTP/templates/test.html" />
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BHS-12DTP" />
@@ -304,8 +303,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.pizza_order_form" />
+        <item itemvalue="Python.main" />
         <item itemvalue="JavaScript Debug.test.html" />
         <item itemvalue="Flask server.Flask (app.py)" />
       </list>
@@ -325,17 +324,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="37" width="1512" height="945" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="14" />
       <window_info anchor="bottom" id="Event Log" order="18" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="17" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.07471264" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.21333334" />
       <window_info anchor="bottom" id="Version Control" order="16" />
       <window_info anchor="bottom" id="Python Console" order="20" />
       <window_info anchor="bottom" id="Terminal" order="19" weight="0.32965517" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15306123" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12140575" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" weight="0.3290735" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -656,10 +655,20 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pizza_order_form.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        <state relative-caret-position="424">
+          <caret line="16" column="79" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="79" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
@@ -668,18 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/test_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="173" column="53" lean-forward="true" selection-start-line="173" selection-start-column="53" selection-end-line="173" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="454">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
         </state>
       </provider>
     </entry>
