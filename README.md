@@ -51,9 +51,8 @@ BuildError
 werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'delete' with values ['id']. Did you mean 'delete_order' instead?
 ```
 3.Solution:
-The reason of this problem is your "orders" is a list not an object. Be careful of 
-```
 Always mind the function of url_for('delete'), it needs to bind a function name called delete();
+```
 def delete():
 ```
 
